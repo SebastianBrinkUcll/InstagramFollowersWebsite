@@ -1,0 +1,7 @@
+go to git bash in the folder
+
+source venv/Scripts/activate
+
+python instaApp.py
+
+deactivate
