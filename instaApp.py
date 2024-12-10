@@ -81,7 +81,9 @@ def upload_files():
     unfollowers = following - followers
 
     # Return a result
-    return render_template('unfollowers.html', unfollowers=sorted(unfollowers))
+    return render_template('unfollowers.html', 
+                           unfollowers=sorted(unfollowers), 
+                           unfollowers_count=len(unfollowers))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

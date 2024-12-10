@@ -57,6 +57,13 @@
         .back-button:hover {
             background-color: #45a049;
         }
+
+        .unfollowers-count {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ff4500;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +72,10 @@
     </header>
 
     <div class="container">
+        <div class="unfollowers-count">
+            Unfollowers: {{ unfollowers_count }}
+        </div>
+
         <h2>These People dont follow you back!</h2>
         <ul>
             {% for username in unfollowers %}
