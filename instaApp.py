@@ -80,7 +80,7 @@ def upload_files():
     following = load_instagram_data(following_path)
     unfollowers = following - followers
 
-    # Return a result
+    # Return a result with the count of unfollowers
     return render_template('unfollowers.html', 
                            unfollowers=sorted(unfollowers), 
                            unfollowers_count=len(unfollowers))
