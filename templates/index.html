@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seb's Instagram App</title>
+    <title>Seb's goated website</title>
+    <link rel="icon" href="../image.jpg">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #cfcfcf;
             color: #333;
             margin: 0;
             padding: 0;
@@ -37,6 +38,17 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            text-align: center;
+            margin: 20px auto;
+            font-size: 20px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 20px auto;
         }
 
         .button {
@@ -70,26 +82,44 @@
 </head>
 <body>
     <header>
-        <h1>Seb's Instagram App</h1>
+        <h1>Seb's Instagram Website</h1>
     </header>
 
+    <div class="intro">
+        <p><b>Here's a tutorial on how to get your Instagram data.</b></p>
+    </div>
+
+    <div class="video-container">
+        <video id="tutorial-video" width="600" controls>
+            <source src="../tut_website.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
     <div class="container">
-        <p>Welcome to Seb's Instagram Unfollowers App! Check who doesn't follow you back on Instagram.</p>
+        <p>Check who doesn't follow you back on Instagram. </p>
         
         <form action="/upload" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="followers_file">Upload Followers JSON:</label>
+                <label for="followers_file">Upload Followers File:</label>
                 <input type="file" name="followers_file" id="followers_file" required>
             </div>
 
             <div class="form-group">
-                <label for="following_file">Upload Following JSON:</label>
+                <label for="following_file">Upload Following File:</label>
                 <input type="file" name="following_file" id="following_file" required>
             </div>
 
-            <button type="submit" class="button">Find Unfollowers</button>
+            <button type="submit" class="button">Find Them NOW!</button>
         </form>
     </div>
+    <div class="footer">&copySeb's goated website</div>
+    <style>.footer { 
+        position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        z-index: 10;
+    }</style>
 </body>
 </html>
 
